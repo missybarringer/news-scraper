@@ -17,7 +17,7 @@ var router = express.Router();
 require("./config/routes")(router);
 
 // designate public folder as a static directory
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + '/public'));
 
 // connect handlebars to our express app
 app.engine("handlebars", expressHandlebars({
