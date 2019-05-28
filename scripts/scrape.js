@@ -9,7 +9,7 @@ var scrape = function (callback) {
         var articles = [];
 
         $(".theme-summary").each(function(i, element) {
-            var head = $(this).children(".story-heading).text().trim();
+            var head = $(this).children(".story-heading").text().trim();
             var sum = $(this).children(".summary").text().trim;
 
             if(head && sum) {
