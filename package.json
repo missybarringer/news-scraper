@@ -2,10 +2,7 @@
   "name": "news-scraper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/missybarringer/news-scraper.git"
@@ -24,5 +21,8 @@
     "express-handlebars": "^3.1.0",
     "mongoose": "^5.5.11",
     "nodemon": "^1.19.0"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
