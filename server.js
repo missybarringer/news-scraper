@@ -5,7 +5,7 @@ var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
 
 // set up our port to be either the host's or our local port 3000
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3001;
 
 // instantiate our express app
 var app = express();
