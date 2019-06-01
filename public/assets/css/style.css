@@ -4,7 +4,7 @@ html {
 }
 body {
     margin-bottom: 80px;
-    background-image: url("../images/paper.png");
+    background-image: url("../images/flemming-fuchs-337961-unsplash.jpg");
 }
 .footer {
     position: absolute;
@@ -62,4 +62,11 @@ textarea {
 .note.list-group-item .btn {
     position: relative;
     bottom: 10px;
+}
+.readLink {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caption {
+    background-color: #ccc;
 }

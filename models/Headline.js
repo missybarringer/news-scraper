@@ -8,9 +8,12 @@ var headlineSchema = new Schema({
         required: true,
         unique: true
     },
-    summary: {
+    url: {
         type: String,
         required: true
+    },
+    summary: {
+        type: String
     },
     date: String,
     saved: {

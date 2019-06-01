@@ -41,15 +41,16 @@ $(document).ready(function() {
             var panel =
             $(["<div class='panel panel-default'>",
               "<div class='panel-heading'>",
-              "<h3>",
+              "<h4>",
               article.headline,
+              "</h4>",
+              "</div>",
+              "<div class='panel-body'>",
+              "<a class='readLink btn btn-secondary' href='"+article.url+"' target='_blank'>Read Article",
+              "</a>",
               "<a class='btn btn-success save'>",
               "Save Article",
               "</a>",
-              "</h3>",
-              "</div>",
-              "<div class='panel-body'>",
-              article.summary,
               "</div>",
               "</div>"
         ].join(""));

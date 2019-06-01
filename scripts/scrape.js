@@ -8,17 +8,24 @@ var scrape = function (callback) {
 
         var articles = [];
 
+        // $("article h2").each(function(i, element) {
+        //     var head = $(this).children("a").text().trim();
+        //     var sum = $(this).children("a").attr("href").trim();
+            // var sum = $(this).parent().closest("p").text().trim();
         $("article h2").each(function(i, element) {
             var head = $(this).children("a").text().trim();
-            var sum = $(this).children("a").attr("href").trim();
-            // var sum = $(this).parent().closest("p").text().trim();
+            var url = $(this).children("a").attr("href").trim();
+            // var sum = $(this).children("a").attr("href").trim();
+            var sum = $("h2").parent("div").closest("p").text().trim();
 
-            if(head && sum) {
+            if(head && url) {
                 var headNeat = head.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
-                var sumNeat = "https://www.nytimes.com" + sum.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
+                var urlNeat = "https://www.nytimes.com" + url.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
+                var sumNeat = sum.replace(/(\r\n|\n|\r|\t|\s+)/gm, " ").trim();
 
                 var dataToAdd = {
                     headline: headNeat,
+                    url: urlNeat,
                     summary: sumNeat
                 };
                 articles.push(dataToAdd);
