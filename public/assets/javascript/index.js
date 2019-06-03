@@ -46,7 +46,7 @@ $(document).ready(function() {
               "</h4>",
               "</div>",
               "<div class='panel-body'>",
-              "<a class='readLink btn btn-secondary' href='"+article.url+"' target='_blank' rel='noopener'>Read Article",
+              "<a class='readLink btn btn-secondary' href='"+article.url+"' target='_blank' rel='noopener'>"+article.url,
               "</a>",
               "<a class='btn btn-success save'>",
               "Save Article",
